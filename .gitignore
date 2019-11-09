@@ -1,0 +1,16 @@
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# mac
+.DS_Store
+*.pyc
+.idea/
+
+# PSD
+/psd/
+*.psd
+
+# node
+/node_modules/

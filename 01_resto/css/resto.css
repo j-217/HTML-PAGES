@@ -1,0 +1,375 @@
+/* 字体配置 */
+@font-face {
+	font-family: 'Aleo Regular';     /* 这个名字可以自己定义 */
+	src: url('../fonts/ALEO.ttf'); /* IE9 Compat Modes */      /*这里以及下面的src后面的地址填的都是自己本地的相对地址*/
+	src: url('../fonts/ALEO.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/ALEO.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'Aleo Light';     /* 这个名字可以自己定义 */
+	src: url('../fonts/ALEO-LIGHT.ttf'); /* IE9 Compat Modes */      /*这里以及下面的src后面的地址填的都是自己本地的相对地址*/
+	src: url('../fonts/ALEO-LIGHT.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/ALEO-LIGHT.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'Aleo Blod';     /* 这个名字可以自己定义 */
+	src: url('../fonts/ALEO-BLOD.ttf'); /* IE9 Compat Modes */      /*这里以及下面的src后面的地址填的都是自己本地的相对地址*/
+	src: url('../fonts/ALEO-BLOD.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/ALEO-BLOD.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'Aleo LightItalic';     /* 这个名字可以自己定义 */
+	src: url('../fonts/ALEO-LIGHTITALIC.ttf'); /* IE9 Compat Modes */      /*这里以及下面的src后面的地址填的都是自己本地的相对地址*/
+	src: url('../fonts/ALEO-LIGHTITALIC.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/ALEO-LIGHTITALIC.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+/* 公共样式 */
+
+/* 清除浮动 */
+/* ie8不识别双冒号伪元素 */
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    zoom: 1;
+}
+
+.mb-200{
+    margin-bottom: 200px;
+}
+
+.float-l{
+    float: left;
+}
+
+.float-r{
+    float: right;
+}
+
+/* 公共头部 */
+.common-header{
+    width: 1500px;
+    height: 110px;
+    background-color: #fff;
+    margin: 0 auto;
+    font-family: 'Aleo Regular';
+}
+.common-header .header-left{
+    float: left;
+    margin: 40px 0 0 200px;
+}
+.common-header .header-right{
+    float: right;
+}
+
+.header-right .nav{
+    margin-top: 48px;
+    margin-right: 200px;
+}
+
+.header-right .nav .item{
+    float: left;
+    color: #3b3b3b;
+    font-size: 14px;
+    margin-left: 49px;
+}
+/* 公共底部 */
+.common-footer{
+    width: 1500px;
+    height: 317px;
+    background-color: #3b3b3b;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.common-footer .item-box{
+    font-size: 14px;
+    margin: 100px 200px 0;
+    font-family: 'Aleo Light';
+    font-size: 16px;
+}
+
+.item-box .item{
+    float: left;
+    color: #ececec;
+    width: 230px;
+    margin-right: 60px; 
+}
+
+.item-box .mr-0{
+    margin-right: 0;
+}
+
+.item-box .item .txt{
+    line-height: 30px;
+}
+
+.item-box .item .fontweight-b{
+    font-family: 'Aleo Blod';
+}
+
+.item-box .item .link-to{
+    font-family: 'Aleo Blod';
+    color: #ececec;
+}
+
+/* 公共内容区 */
+.common-body{
+    margin: 0 auto;
+    width: 1500px;
+}
+
+/* 展示面板 */
+.common-body .billboard{
+    width: 100%;
+}
+
+.billboard .banner-bg{
+    position: relative;
+    width: 100%;
+    border-bottom: 4px solid #f34949;
+}
+
+.billboard .banner-bg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 1500px;
+    height: 570px;
+    background-color: rgba(33, 33, 33, 0.6);
+}
+
+.banner-bg .banner{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.banner-bg .banner-slogon{
+    position: absolute;
+    top: 210px;
+    left: 360px;
+}
+
+.banner-bg .banner-slogon-sub{
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    font-family: 'Aleo Regular';
+    bottom: 210px;
+    left: 576px;
+}
+
+.banner-bg .banner-slogon-sub::before,
+.banner-bg .banner-slogon-sub::after{
+    content: "";
+    display: block;
+    width: 40px;
+    border-top: 1px solid #fff;
+    position: absolute;
+    top: 8px;
+}
+
+.banner-bg .banner-slogon-sub::before{
+    left: -67px;
+}
+
+.banner-bg .banner-slogon-sub::after{
+    right: -67px;
+}
+
+/* 菜单 */
+.common-body .menu{
+    position: relative;
+    height: 596px;
+    width: 1500px;
+}
+
+.menu .menu-title{
+    position: relative;
+    height: 60px;
+    width: 155px;
+    background-color: #f34949;
+    font-size: 20px;
+    font-family: 'Aleo Blod';
+    color: #fff;
+    text-align: center;
+    padding-top: 21px;
+    margin: 0 auto;
+}
+
+.menu .menu-title::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -11px;
+    border-left: 77.5px solid #f34949;
+    border-right: 77.5px solid #f34949;
+    border-bottom: 11px solid transparent;
+}
+
+.menu .menu-body{
+    width: 1100px;
+    margin: 80px 200px 0;
+}
+
+.menu-body .body-left{
+    width: 520px;
+    float: left;
+}
+
+.body-left .item{
+    margin-bottom: 60px;
+}
+
+.item .item-left{
+    float: left;
+    font-family: 'Aleo Regular';
+    font-size: 16px;
+    color: #555555;
+}
+
+.item .item-left .sub{
+    font-family: 'Aleo LightItalic';
+    font-size: 12px;
+    padding-top: 8px;
+    color: #b7b7b7;
+}
+
+.item .item-right{
+    float: right;
+    font-family: 'Aleo Regular';
+    font-size: 16px;
+    color: #555555;
+}
+
+
+.body-left .item .item-right{
+    margin-right: 28px;
+}
+
+.menu-body .body-right{
+    width: 520px;
+    float: right;
+}
+
+.body-right .item{
+    margin-bottom: 60px;
+    margin-left: 30px;
+}
+
+.common-body .menu-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.menu-footer .btn-more{
+    position: relative;
+    box-sizing: border-box;
+    height: 34px;
+    width: 134px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: 'Aleo Regular';
+    color: #b7b7b7;
+    padding-left: 14px;
+    line-height: 32px;
+    border: 1px solid #b7b7b7;
+}
+
+.menu-footer .btn-more .content{
+    padding-right: 13px;
+}
+
+/* 伪元素ie8/9不支持 */
+/* .menu-footer .btn-more::after{
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    right: 14px;
+    bottom: 13px;
+    border-top: 1px solid #b7b7b7;
+    border-left: 1px solid #b7b7b7;
+    transform: rotateZ(-135deg);
+}    */
+
+.menu-footer .btn-more .icon-arrow{
+    position: relative;
+    left: 11px;
+}
+
+
+/* 特色 */
+.common-body .feature-dishes{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+}
+
+.feature-dishes .title{
+    font-size: 20px;
+    font-family: 'Aleo Blod';
+    color: #3b3b3b;
+    margin-bottom: 80px;
+}
+
+.feature-dishes .dot{
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: #dedede;
+    margin-right: 11px;
+}
+
+.feature-dishes .dots .mr-0{
+    margin-right: 0;
+}
+
+.dots .active{
+    background-color: #9b9b9b;
+}
+
+.feature-dishes .infos .item{
+    margin-right: 60px;
+}
+
+.feature-dishes .infos .mr-0{
+    margin-right: 0;
+}
+
+
+.item .description{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Aleo Light';
+    color: #555;
+}
+
+/* 展示区 */
+.common-body .gallery{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.gallery .gallery-title{
+    font-size: 22px;
+    font-family: 'Aleo Blod';
+    color: #3b3b3b;
+    margin-bottom: 80px;
+}
+
+.gallery .pics{
+    font-size: 0;
+}
